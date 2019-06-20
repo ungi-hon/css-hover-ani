@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+</head>
+
+<body>
+
+    <main id="main">
+    <header>
+        <h1>cssホバーアニメーションまとめ</h1>
+    </header>
+
+    
+
+        <section class="border">
+            <div>
+                <button type="button" onclick="border1_modal()"><span>Button</span></button>
+                <button type="button" onclick="border2_modal()"><span>Button</span></button>
+                <button type="button" onclick="border3_modal()"><span>Button</span></button>
+                <button type="button" onclick="border4_modal()"><span>Button</span></button>
+            </div>
+        </section>
+        <section class="move">
+            <div>
+                <button type="button" onclick="move1_modal()">Button</button>
+                <button type="button" onclick="move2_modal()">Button</button>
+                <button type="button" onclick="move3_modal()">Button</button>
+                <button type="button" onclick="move4_modal()">Button</button>
+            </div>
+
+        </section>
+        <section class="color">
+            <div>
+                <button type="button" onclick="color1_modal()"></button>
+                <button type="button" onclick="color2_modal()"></button>
+                <button type="button" onclick="color3_modal()"></button>
+                <button type="button" onclick="color4_modal()"></button>
+            </div>
+        </section>
+        <section class="color_2">
+            <div>
+                <button type="button" onclick="color5_modal()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <button type="button" onclick="color6_modal()">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <button type="button" onclick="color7_modal()">
+                    <span>ボ</span>
+                    <span>タ</span>
+                    <span>ン</span>
+                    <span>だ</span>
+                    <span>よ</span>
+                    <span>ク</span>
+                    <span>リ</span>
+                    <span>ッ</span>
+                    <span>ク</span>
+                    <span>し</span>
+                    <span>て</span>
+                    <span>ね</span>
+                    <span>!</span>
+                </button>
+
+                <button type="button" onclick="color8_modal()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.2 111.7">
+                                <path class="st0" d="M87.1,111L59.5,95.8c-1.5-0.8-3.3-0.8-4.8-0.1l-28.3,14.2c-3.8,1.9-8.1-1.4-7.3-5.5l6-31.1
+                    c0.3-1.7-0.2-3.4-1.4-4.6L1.5,46.2c-3-3-1.2-8.1,3-8.7l31.4-3.9c1.7-0.2,3.1-1.2,3.9-2.7L54.3,2.8c2-3.8,7.4-3.7,9.2,0.2l13.4,28.6
+                    c0.7,1.5,2.1,2.6,3.8,2.9l31.2,5.2c4.2,0.7,5.8,5.9,2.7,8.8L91.5,70c-1.2,1.2-1.8,2.8-1.6,4.5l4.7,31.3
+                    C95.3,110,90.9,113.1,87.1,111z" />
+                            </svg></span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.2 111.7">
+                                <path class="st0" d="M87.1,111L59.5,95.8c-1.5-0.8-3.3-0.8-4.8-0.1l-28.3,14.2c-3.8,1.9-8.1-1.4-7.3-5.5l6-31.1
+                    c0.3-1.7-0.2-3.4-1.4-4.6L1.5,46.2c-3-3-1.2-8.1,3-8.7l31.4-3.9c1.7-0.2,3.1-1.2,3.9-2.7L54.3,2.8c2-3.8,7.4-3.7,9.2,0.2l13.4,28.6
+                    c0.7,1.5,2.1,2.6,3.8,2.9l31.2,5.2c4.2,0.7,5.8,5.9,2.7,8.8L91.5,70c-1.2,1.2-1.8,2.8-1.6,4.5l4.7,31.3
+                    C95.3,110,90.9,113.1,87.1,111z" />
+                            </svg></span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116.2 111.7">
+                                <path class="st0" d="M87.1,111L59.5,95.8c-1.5-0.8-3.3-0.8-4.8-0.1l-28.3,14.2c-3.8,1.9-8.1-1.4-7.3-5.5l6-31.1
+                    c0.3-1.7-0.2-3.4-1.4-4.6L1.5,46.2c-3-3-1.2-8.1,3-8.7l31.4-3.9c1.7-0.2,3.1-1.2,3.9-2.7L54.3,2.8c2-3.8,7.4-3.7,9.2,0.2l13.4,28.6
+                    c0.7,1.5,2.1,2.6,3.8,2.9l31.2,5.2c4.2,0.7,5.8,5.9,2.7,8.8L91.5,70c-1.2,1.2-1.8,2.8-1.6,4.5l4.7,31.3
+                    C95.3,110,90.9,113.1,87.1,111z" />
+                            </svg></span>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <div class="modal">
+        <div class="modal_bg"></div>
+
+        <div id="border_1">
+
+          <div>
+            <p>ボーダー　パターン１</p>
+          </div>
+            <pre>
+                    <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                    }<br>
+                    button:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        transition: all 1s;
+                    }<br>
+                    button:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        transition: all 1s;
+                    }<br>
+                    button:hover:before {
+                        width: 100%;
+                        height: 100%;
+                        border-top: 5px solid #000;
+                        border-left: 5px solid #000;
+                    }<br>
+                    button:hover:after {
+                        width: 100%;
+                        height: 100%;
+                        border-bottom: 5px solid #000;
+                        border-right: 5px solid #000;
+                    }<br>
+                    </code>
+            </pre>
+        </div>
+
+        <div id="border_2">
+      
+
+            <div>
+                <p>ボーダー　パターン２</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+    
+    
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                    }<br>
+                    
+                    button:before {
+                        content: '';
+                        position: absolute;
+                        top: -5%;
+                        left: -5%;
+                        width: 20%;
+                        height: 20%;
+                        border-top: 5px solid #000;
+                        border-left: 5px solid #000;
+                        transition: all .5s;
+                      }<br>
+                    button:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -5%;
+                        right: -5%;
+                        width: 20%;
+                        height: 20%;
+                        border-bottom: 5px solid #000;
+                        border-right: 5px solid #000;
+                        transition: all .5s;
+                      }<br>
+                    button:hover:before {
+                        width: 100%;
+                        height: 100%;
+                      }<br>
+                    button:hover:after {
+                        width: 100%;
+                        height: 100%;
+                      }<br>
+                        </code>
+                </pre>
+        </div>
+
+        <div id="border_3">
+      
+
+            <div>
+                <p>ボーダー　パターン３</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+        
+        
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                      }<br>
+                    button:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid #000;
+                        transition: all .5s;
+                      }<br>
+                    button:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-right: 5px solid #000;
+                        transition: all .5s;
+                      }<br>
+                    button > span:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-bottom: 5px solid #000;
+                        transition: all .5s;
+                      }<br>
+                    button > span:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid #000;
+                        transition: all .5s;
+                      }<br>
+                    button:hover:before {
+                        width: 100%;
+                        height: 100%;
+                      }<br>
+                    button:hover:after {
+                        width: 100%;
+                        height: 100%;
+                      }<br>
+                    button:hover > span:before {
+                        width: 100%;
+                        height: 100%;
+                      }<br>
+                    button:hover > span:after {
+                        width: 100%;
+                        height: 100%;
+                      }<br>
+                            </code>
+                    </pre>
+        </div>
+
+        <div id="border_4">
+      
+
+            <div>
+                <p>ボーダー　パターン４</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                      }<br>
+                    button:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid #000;
+                        transition: all .2s linear;
+                      }<br>
+                    button:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-right: 5px solid #000;
+                        transition: all .2s linear;
+                      }<br>
+                    button > span:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-bottom: 5px solid #000;
+                        transition: all .2s linear;
+                      }<br>
+                    button > span:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid #000;
+                        transition: all .2s linear;
+                      }<br>
+                    button:hover:before {
+                        width: 100%;
+                        height: 100%;
+                      }<br>
+                    button:hover:after {
+                        width: 100%;
+                        height: 100%;
+                        transition-delay: .4s;
+                      }<br>
+                    button:hover > span:before {
+                        width: 100%;
+                        height: 100%;
+                        transition-delay: .2s;
+                      }<br>
+                    button:hover > span:after {
+                        width: 100%;
+                        height: 100%;
+                        transition-delay: .6s;
+                      }<br>
+                           </code>
+                        </pre>
+        </div>
+
+        <div id="move_1">
+      
+
+            <div>
+                <p>動くボタン　パターン１</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+
+                      }<br><br>
+                    button:hover {
+                        animation: vibe .1s ease forwards;
+                        animation-iteration-count: 3;
+                      }<br>
+
+                    @keyframes vibe{
+                        25% { transform: translateX(-5%); }
+                        75% { transform: translateX(5%); }
+                    }
+                      
+                           </code>
+                        </pre>
+        </div>
+        <div id="move_2">
+      
+
+            <div>
+                <p>動くボタン　パターン２</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+
+                      }<br>
+                    button:hover {
+                        transform: scale(1.2);
+                      }
+                      
+                           </code>
+                        </pre>
+        </div>
+
+        <div id="move_3">
+      
+
+            <div>
+                <p>動くボタン　パターン３</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all 1s;
+
+                      }<br>
+                    button:hover {
+                        transform: rotateY(360deg);
+                      }<br>
+                      
+                           </code>
+                        </pre>
+        </div>
+
+        <div id="move_4">
+      
+
+            <div>
+                <p>動くボタン　パターン４</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #eee;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+
+                      }<br>
+                    button:hover {
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+                        transform: translateY(-1rem);
+                      }<br>
+                      
+                           </code>
+                        </pre>
+        </div>
+
+        <div id="color_1">
+      
+
+            <div>
+                <p>カラー　パターン１</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+                        
+
+                      }<br>
+                    button:hover {
+                            background: #ff0000;
+                      }<br>
+                      
+                           </code>
+                        </pre>
+        </div>
+        <div id="color_2">
+      
+
+            <div>
+                <p>カラー　パターン２</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        overflow: hidden;
+                        border: 1px solid #0000ff;
+                      }<br>
+                      button:before {
+                        content: '';
+                        background-color: #ff0000;
+                        width: 36.3636363636vw;
+                        height: 27.2727272727vw;
+                        position: absolute;
+                        top: 0;
+                        left: -300%;
+                        transform: skewX(45deg);
+                        transition: 1s;
+                      }<br>
+                      button:after {
+                        content: '';
+                        background-color: #0000ff;
+                        width: 36.3636363636vw;
+                        height: 27.2727272727vw;
+                        position: absolute;
+                        top: 0;
+                        left: -300%;
+                        transform: skewX(45deg);
+                        transition: 1s;
+                        transition-delay: 0s;
+                      }<br>
+                      button:hover:before {
+                        transform: skewX(45deg) translateX(120%);
+                      }<br>
+                      button:hover:after {
+                        transform: skewX(45deg) translateX(120%);
+                        transition-delay: .4s;
+                      }<br>
+                      
+                      
+                           </code>
+                        </pre>
+        </div>
+
+        <div id="color_3">
+      
+
+            <div>
+                <p>カラー　パターン３</p>
+              </div>
+            <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+
+
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all 1s;
+                        border: #d8d8d8;
+                        overflow: hidden;
+                      }<br>
+                    button:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: inherit;
+                        height: inherit;
+                        border-radius: 18.1818181818vw;
+                        transform: scale(0);
+                        background: #ff0000;
+                        transition: 1s;
+                      }<br>
+                    button:hover::before {
+                        transform: scale(1);
+                      }<br>
+                      
+                      
+                    </code>
+                </pre>
+        </div>
+
+        <div id="color_4">
+      
+
+            <div>
+                <p>カラー　パターン４</p>
+              </div>
+                <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+    
+    
+                            <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+                        overflow: hidden;
+                      }<br>
+                    button:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -50%;
+                        width: 50%;
+                        height: 100%;
+                        background-color: #000;
+                        transition: .5s;
+                      }
+                    button:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: -50%;
+                        width: 50%;
+                        height: 100%;
+                        background-color: #000;
+                        transition: .5s;
+                      }
+                    button:hover:before {
+                        transform: translateX(100%);
+                      }
+                    button:hover:after {
+                        transform: translateX(-100%);
+                          }<br>
+                          
+                          
+                        </code>
+                    </pre>
+            </div>
+
+            <div id="color_5">
+      
+
+                <div>
+                    <p>カラー　パターン５</p>
+                  </div>
+                <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+    
+    
+                            <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+                        overflow: hidden;
+                      }<br>
+                    button > span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: inherit;
+                        height: inherit;
+                        border-radius: inherit;
+                      }<br>
+                    button:hover > span:nth-child(1) {
+                        background-color: #E60012;
+                        animation: sircle 1s linear 0s forwards;
+                        z-index: 7;
+                      }<br>
+                    button:hover > span:nth-child(2) {
+                        background-color: #F39800;
+                        animation: sircle 1s linear .1s forwards;
+                        z-index: 6;
+                      }<br>
+                    button:hover > span:nth-child(3) {
+                        background-color: #FFF100;
+                        animation: sircle 1s linear .2s forwards;
+                        z-index: 5;
+                      }<br>
+                    button:hover > span:nth-child(4) {
+                        background-color: #009944;
+                        animation: sircle 1s linear .3s forwards;
+                        z-index: 4;
+                      }<br>
+                    button:hover > span:nth-child(5) {
+                        background-color: #0068B7;
+                        animation: sircle 1s linear .4s forwards;
+                        z-index: 3;
+                      }<br>
+                    button:hover > span:nth-child(6) {
+                        background-color: #1D2088;
+                        animation: sircle 1s linear .5s forwards;
+                        z-index: 2;
+                      }<br>
+                    button:hover > span:nth-child(7) {
+                        background-color: #920783;
+                        animation: sircle 1s linear .6s forwards;
+                        z-index: 1;
+                      }<br>
+                          
+                          
+                        </code>
+                    </pre>
+            </div>
+
+            <div id="color_6">
+      
+
+                <div>
+                    <p>カラー　パターン６</p>
+                  </div>
+                    <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+        
+        
+                                <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+                        overflow: hidden;
+                        z-index: 0;
+                      }<br>
+                    button > div {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: inherit;
+                        height: inherit;
+                        border-radius: 18.1818181818vw;
+                        z-index: 1;
+                      }<br>
+                    button > div > span {
+                        transform: translateY(-101%);
+                        position: absolute;
+                        top: 0;
+                        height: inherit;
+                        z-index: 2;
+                        background: #000;
+                        border: 1px solid #000;
+                      }<br>
+                    button > div > span:nth-child(1) {
+                        width: 2.5974025974vw;
+                        left: 0;
+                      }<br>
+                    button > div > span:nth-child(2) {
+                        width: 2.5974025974vw;
+                        left: 2.5974025974vw;
+                      }<br>
+                    button > div > span:nth-child(3) {
+                        width: 2.5974025974vw;
+                        left: 5.1948051948vw;
+                      }<br>
+                    button > div > span:nth-child(4) {
+                        width: 2.5974025974vw;
+                        left: 7.7922077922vw;
+                      }<br>
+                    button > div > span:nth-child(5) {
+                        width: 2.5974025974vw;
+                        left: 10.3896103896vw;
+                      }<br>
+                    button > div > span:nth-child(6) {
+                        width: 2.5974025974vw;
+                        left: 12.987012987vw;
+                      }<br>
+                    button > div > span:nth-child(7) {
+                        width: 2.5974025974vw;
+                        left: 15.5844155844vw;
+                      }<br>
+                    button:hover > div > span:nth-child(1) {
+                        animation: down .3s ease-in 0s forwards;
+                      }<br>
+                    button:hover > div > span:nth-child(2) {
+                        animation: down .3s ease-in .2s forwards;
+                      }<br>
+                    button:hover > div > span:nth-child(3) {
+                        animation: down .3s ease-in .4s forwards;
+                      }<br>
+                    button:hover > div > span:nth-child(4) {
+                        animation: down .3s ease-in .6s forwards;
+                      }<br>
+                    button:hover > div > span:nth-child(5) {
+                        animation: down .3s ease-in .8s forwards;
+                      }<br>
+                    button:hover > div > span:nth-child(6) {
+                        animation: down .3s ease-in 1s forwards;
+                      }<br>
+                    button:hover > div > span:nth-child(7) {
+                        animation: down .3s ease-in 1.2s forwards;
+                      }<br>
+                              
+                              
+                            </code>
+                        </pre>
+                </div>
+
+                <div id="color_7">
+      
+
+                    <div>
+                        <p>カラー　パターン７</p>
+                      </div>
+                    <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+        
+        
+                            <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+                        overflow: hidden;
+                        z-index: 0;
+                      }<br>
+                    button > span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 9.0909090909vw;
+                        font-weight: bold;
+                      }<br>
+                    button > span:nth-child(1) {
+                        top: -50%;
+                      }<br>
+                    button > span:nth-child(2) {
+                        top: 150%;
+                      }<br>
+                    button > span:nth-child(3) {
+                        left: -50%;
+                      }<br>
+                    button > span:nth-child(4) {
+                        left: 150%;
+                      }<br>
+                    button > span:nth-child(5) {
+                        top: -50%;
+                      }<br>
+                    button > span:nth-child(6) {
+                        top: 150%;
+                      }<br>
+                    button > span:nth-child(7) {
+                        left: -50%;
+                      }<br>
+                    button > span:nth-child(8) {
+                        left: 150%;
+                      }<br>
+                    button > span:nth-child(9) {
+                        top: -50%;
+                      }<br>
+                    button > span:nth-child(10) {
+                        top: 150%;
+                      }<br>
+                    button > span:nth-child(11) {
+                        left: -50%;
+                      }<br>
+                    button > span:nth-child(12) {
+                        left: 150%;
+                      }<br>
+                    button > span:nth-child(13) {
+                        top: -50%;
+                      }<br>
+                    button:hover > span:nth-child(1) {
+                        top: 150%;
+                        transition: 2s;
+                      }<br>
+                    button:hover > span:nth-child(2) {
+                        top: -50%;
+                        transition: 2s;
+                        transition-delay: .5s;
+                      }<br>
+                    button:hover > span:nth-child(3) {
+                        left: 150%;
+                        transition: 2s;
+                        transition-delay: 1s;
+                      }<br>
+                    button:hover > span:nth-child(4) {
+                        left: -50%;
+                        transition: 2s;
+                        transition-delay: 1.5s;
+                      }<br>
+                    button:hover > span:nth-child(5) {
+                        top: 150%;
+                        transition: 2s;
+                        transition-delay: 2s;
+                      }<br>
+                    button:hover > span:nth-child(6) {
+                        top: -50%;
+                        transition: 2s;
+                        transition-delay: 3s;
+                      }<br>
+                    button:hover > span:nth-child(7) {
+                        left: 150%;
+                        transition: 2s;
+                        transition-delay: 3.5s;
+                      }<br>
+                    button:hover > span:nth-child(8) {
+                        left: -50%;
+                        transition: 2s;
+                        transition-delay: 4s;
+                      }<br>
+                    button:hover > span:nth-child(9) {
+                        top: 150%;
+                        transition: 2s;
+                        transition-delay: 4.5s;
+                      }<br>
+                    button:hover > span:nth-child(10) {
+                        top: -50%;
+                        transition: 2s;
+                        transition-delay: 5s;
+                      }<br>
+                    button:hover > span:nth-child(11) {
+                        left: 150%;
+                        transition: 2s;
+                        transition-delay: 5.5s;
+                      }<br>
+                    button:hover > span:nth-child(12) {
+                        left: -50%;
+                        transition: 2s;
+                        transition-delay: 6s;
+                      }<br>
+                    button:hover > span:nth-child(13) {
+                        top: 50%;
+                        transition: 1s;
+                        transition-delay: 6.5s;
+                        animation: txt_up 1s ease 7.5s forwards;
+                      }<br>
+                              
+                              
+                            </code>
+                        </pre>
+                </div>
+
+                <div id="color_8">
+      
+
+                    <div>
+                        <p>カラー　パターン８</p>
+                      </div>
+                    <pre>
+                        <code class=”prettyprint”>
+                        <span class="file">&lt;html&gt;</span>
+                    &lt;button type="button"&gt;&lt;span&gt;Button&lt;&#047;span&gt;&lt;&#047;button&gt;
+        
+        
+                        <span class="file">&lt;css&gt;</span>
+                    button {
+                        position: relative;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+                        width: 20rem;
+                        height: 20rem;
+                        background-color: #FFE8E1;
+                        font-size: 2rem;
+                        border-radius: 20rem;
+                        transition: all .5s;
+                        overflow: hidden;
+                        z-index: 0;
+                      }<br>
+                    button > span {
+                        position: absolute;
+                        width: 18.1818181818vw;
+                        height: 18.1818181818vw;
+                        border-radius: 18.1818181818vw;
+                        top: 50%;
+                        transform: translateY(-50%);
+                      }<br>
+                    
+                    button > span:nth-child(1) {
+                        left: -100%;
+                        background: #f2f4d1;
+                        z-index: 1;
+                      }<br>
+                    button > span:nth-child(2) {
+                        right: -100%;
+                        background: #b2d3be;
+                        z-index: 2;
+                      }<br>
+                    button > span:nth-child(3) {
+                        left: -100%;
+                        background: #89a3b2;
+                        z-index: 3;
+                      }<br>
+                    button > span:nth-child(4) {
+                        right: -100%;
+                        background: #5e6073;
+                        z-index: 4;
+                      }<br>
+                    button > div {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: inherit;
+                        height: inherit;
+                        z-index: 5;
+                      }<br>
+                    button > div > span {
+                        position: absolute;
+                        top: -1.8181818182vw;
+                        border: 1px dashed #eee;
+                        height: 0;
+                      }<br>
+                    button > div > span:nth-child(1) {
+                        left: 20%;
+                      }<br>
+                    button > div > span:nth-child(2) {
+                        left: 60%;
+                      }<br>
+                    button > div > span:nth-child(3) {
+                        left: 80%;
+                      }<br>
+                    button > div > span > svg {
+                        position: absolute;
+                        bottom: -1.8181818182vw;
+                        width: 0;
+                        left: 50%;
+                        transform: translateX(-40%);
+                        fill: #FFF100;
+                      }<br>
+                    
+                    button:hover > span {
+                        transition: .8s;
+                      }<br>
+                    button:hover > span:nth-child(1) {
+                        transform: rotate(180deg) translateY(50%);
+                        transform-origin: center right;
+                        background: #f2f4d1;
+                        z-index: 1;
+                      }<br>
+                    button:hover > span:nth-child(2) {
+                        transform: rotate(-180deg) translateY(50%);
+                        transform-origin: center left;
+                        transition-delay: .4s;
+                        background: #b2d3be;
+                        z-index: 2;
+                      }<br>
+                    button:hover > span:nth-child(3) {
+                        transform: rotate(-180deg) translateY(50%);
+                        background: #89a3b2;
+                        transform-origin: center right;
+                        transition-delay: .8s;
+                        z-index: 3;
+                      }<br>
+                    button:hover > span:nth-child(4) {
+                        transform: rotate(180deg) translateY(50%);
+                        transform-origin: center left;
+                        background: #5e6073;
+                        transition-delay: 1.2s;
+                        z-index: 4;
+                      }<br>
+                    button:hover > div > span {
+                        transition: 1s;
+                        transition-delay: 1.6s;
+                      }<br>
+                    button:hover > div > span:nth-child(1) {
+                        height: 50%;
+                      }<br>
+                    button:hover > div > span:nth-child(2) {
+                        height: 70%;
+                      }<br>
+                    button:hover > div > span:nth-child(3) {
+                        height: 60%;
+                      }<br>
+                    button:hover > div > span > svg {
+                        transition: 1s;
+                        transition-delay: 2.6s;
+                        width: 1.8181818182vw;
+                        animation: star 3s linear 2.4s infinite;
+                      }<br>
+                              
+                              
+                            </code>
+                        </pre>
+                </div>
+
+                
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
